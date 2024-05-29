@@ -1,3 +1,4 @@
+app.use(express.static(__dirname + "/public/"));
 let canvas = document.getElementById('spinnerCanvas');
 let spinWheel = canvas.getContext('2d');
 let colors = ['#baf4ee', '#4ed4c6', '#069687'];
