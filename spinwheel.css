@@ -1,0 +1,138 @@
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+}
+
+.spin-head {
+    color: #eeeeee;
+    background-color: #28c5b5;
+    padding: 15px;
+    text-align: center;
+}
+
+.spin-wheel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #feffff;
+    overflow: hidden;
+}
+.fa-trash{
+    font-size: 16px;
+}
+.spin-canvas {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;  
+    overflow: hidden;
+}
+
+.list-wrapper {
+    background-color: #e9fffd;
+    height: calc(100vh - 86px);
+    overflow-y: auto;
+}
+
+.list-input {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    border:none;
+}
+
+.insert-btn {
+    background-color: #2f7971;
+    color: rgb(200, 226, 224);
+    border: 3px solid;
+    border-radius: 8px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.spin-close {
+    color: rgb(28, 95, 89);
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.spin-close:hover {
+    color: rgb(184, 5, 5);
+} 
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #01413a;
+    font-size: 14px;
+    width: 100%;
+}
+.list-item:nth-child(odd)
+{
+  background: white;
+}
+
+.list-item:last-child{
+    margin-bottom: 30px;
+}
+.modal-value{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #01413a;
+}
+.midspin-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 56px;
+    width: 54px;
+    border-radius: 50%;
+    background: #227777;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.midspin-button::before {
+    content: '\25b2';
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 54px;
+    color: #227777;
+}
+
+.midspin-button::after {
+    content: "SPIN";
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    background-color: #78aca6;
+    color: white;
+}
+
+.modal-footer {
+    background-color:  #78aaa5;
+    color: white;
+}
